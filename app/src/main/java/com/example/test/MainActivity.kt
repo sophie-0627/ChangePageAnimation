@@ -70,10 +70,10 @@ fun Test() {
             repeat(pageState.pageCount) { index ->
                 Box(
                     modifier = Modifier
-                        .animateContentSize()
                         .clip(RoundedCornerShape(3.dp))
                         .height(10.dp)
                         .background(if(pageState.currentPage == index) Color.DarkGray else Color.LightGray)
+                        .animateContentSize()
                         .width(if (pageState.currentPage == index) 50.dp else 10.dp)
                 )
             }
