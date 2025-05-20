@@ -74,7 +74,7 @@ fun Test() {
                         .clip(RoundedCornerShape(3.dp))
                         .height(10.dp)
                         .background(if(pageState.currentPage == index) Color.DarkGray else Color.LightGray)
-                        .width(if (pageState.currentPage == index) 100.dp else 10.dp)
+                        .width(if (pageState.currentPage == index) 50.dp else 10.dp)
                 )
             }
         }
